@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'icons';
+	font-display: swap;
+	 src:url("../fonts/icons.woff") format("woff"), 
+       url("../fonts/icons.woff2#icons") format("woff2");
+
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+%ic {
+	font-family: 'icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none; 
+	list-style: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="_icon-"],
+[class*=" _icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+//Font Name  icons
+//Class Prefix _icon-
+//иконочнвый шрифт   gulp allfont
+._icon-arrow-right:before {
+  content: "\e900";
+}
+._icon-chevron-left:before {
+  content: "\e902";
+}
+._icon-chevron-right:before {
+  content: "\e905";
+}
+._icon-heart1:before {
+  content: "\e906";
+}
+._icon-shopping-cart:before {
+  content: "\e907";
+}
+._icon-auth:before {
+  content: "\e901";
+}
+._icon-eae:before {
+  content: "\e903";
+}
+._icon-eae-line:before {
+  content: "\e904";
+}
+._icon-heart:before {
+  content: "\e9da";
+}
